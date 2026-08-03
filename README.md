@@ -6,7 +6,7 @@ Aplikasi **Presensi App** merupakan aplikasi presensi berbasis **React Native Ex
 
 # 📖 Pengenalan Aplikasi
 
-Presensi App dibuat sebagai media pembelajaran pengembangan aplikasi mobile modern menggunakan React Native dan Supabase.
+Presensi App dibuat sebagai media pembelajaran pengembangan aplikasi mobile modern menggunakan React Native Expo dan Supabase.
 
 Fitur utama aplikasi meliputi:
 
