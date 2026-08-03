@@ -9,9 +9,25 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Lokasi digunakan untuk memeriksa apakah Anda berada di dalam area presensi."
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyAY_YKGJ-GV5E7RiLZE9tUEzyQScyhYh6c"
+      }
     },
     "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -19,7 +35,13 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAY_YKGJ-GV5E7RiLZE9tUEzyQScyhYh6c"
+        }
+      },
+      "package": "com.anonymous.presensiapp"
     },
     "web": {
       "output": "static",
@@ -27,6 +49,12 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Izinkan Presensi App mengakses lokasi Anda untuk memeriksa area presensi."
+        }
+      ],
       [
         "expo-splash-screen",
         {
