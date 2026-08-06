@@ -389,6 +389,8 @@ export default function PresensiScreen() {
                     showsCompass
                     showsBuildings
                     showsUserLocation={false}
+                    zoomControlEnabled={true}   // Android
+                    zoomEnabled={true}
                 >
                     <Polygon
                         coordinates={AREA_PRESENSI}
@@ -620,7 +622,7 @@ const styles = StyleSheet.create({
 
     locationButton: {
         position: "absolute",
-        right: 15,
+        right: 60,
         bottom: 15,
         width: 48,
         height: 48,
